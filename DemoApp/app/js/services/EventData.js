@@ -1,4 +1,4 @@
-eventsApp.factory('eventData', function ($http,$log) {
+eventsApp.factory('eventData', function ($http,$resource,$log) {
     // return {
     //     event: {
     //         name: "Angular Boot　Camp",
@@ -46,17 +46,26 @@ eventsApp.factory('eventData', function ($http,$log) {
     //         ]
     //     }
     // };
-
+    var resource=$resource('/data/event/:id',{id:'@id'});
     return {
-        getEvent: function (successcb) {
-            $http({
+        getEvent: function () {
+            return $http({
                 method: "GET",
                 url: "/data/event/1"
-            }).success(function (data,status,headers,config) {
-                successcb(data);
-            }).error(function () {
-                $log.warn(data,status,headers(),config)
-            });
+            })
+            // .success(function (data,status,headers,config) {
+            //     successcb(data);
+            // }).error(function () {
+            //     $log.warn(data,status,headers(),config)
+            // });
+        },
+        
+        getEventByResource:function(){
+            return resource.get({id:1});
+        },
+        save:function(event){
+            event.id=1001;
+            return resource.save(event);
         }
     }
 });
