@@ -6,6 +6,7 @@
     <title>Event Details</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/app.css" />
+    <base href="/" />
 </head>
 
 <body ng-cloak="" ng-controller="MainController">
@@ -15,10 +16,16 @@
             <div class="navbar-inner">
                 <ul class="nav">
                     <li>
-                        <a href="#/newEvent">Create Event</a>
+                        <!--<a href="#/events">Home</a>-->
+                        
+                        <a href="events">Home</a>
                     </li>
                     <li>
-                        <a href="/about.html">About</a>
+                        <!--<a href="#/newEvent">Create Event</a>-->
+                        <a href="newEvent">Create Event</a>
+                    </li>
+                    <li>
+                        <a href="about">About</a>
                     </li>
                 </ul>
             </div>
@@ -35,7 +42,10 @@
     <script src="/js/app.js"></script>
     <script src="/js/services/EventData.js"></script>
     <script src="/js/controllers/EditEventController.js"></script>
-
+    <script src="/js/controllers/EventListController.js"></script>
+    <script src="/js/controllers/EventDetailController.js"></script>
+    
+    <script src="/js/controllers/AboutController.js"></script>
     <script src="/js/filters.js"></script>
 
 </body>
