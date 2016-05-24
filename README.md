@@ -7,7 +7,24 @@ In this course, you will learn how simple it is to use Angular to create maintai
 
 ### Creating and Using Angular Services
 
+---
 ### Angular Routing
+
+#### About Single Page Application
+
+#### Angular Route and Default Route
+
+#### Accessing Parameter from the Route
+
+#### Using the $route Service
+
+#### Enabling HTML5 Routing using Node.js or IIS
+
+#### Resolve Properties 
+
+#### $location Service
+
+---
 
 ### Build-In Directives and Creating Custom Angular Directives
 
