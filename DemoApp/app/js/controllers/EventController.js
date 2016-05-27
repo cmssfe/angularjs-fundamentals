@@ -1,5 +1,5 @@
 'use strcit'
-eventsApp.controller('EventsController', function ($scope, eventData,$log) {
+eventsApp.controller('EventsController', function ($scope, eventData) {
     $scope.myStyle = { 'color': "green" };
 
     $scope.sortOrder = "name";
@@ -7,7 +7,7 @@ eventsApp.controller('EventsController', function ($scope, eventData,$log) {
     eventData.getEvent().success(function (event) {
         //$scope.event = event;
     }).error(function(data){
-        $log.warn(data,status,headers(),config);
+        //$log.warn(data,status,headers(),config);
     });
     $scope.event=eventData.getEventByResource()
     .$promise

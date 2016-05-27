@@ -48,16 +48,12 @@ eventsApp.factory('eventData', function ($http,$resource,$log) {
     // };
     var resource=$resource('/data/event/:id',{id:'@id'});
     return {
-        getEvent: function () {
-            return $http({
-                method: "GET",
-                url: "/data/event/1"
-            })
-            // .success(function (data,status,headers,config) {
-            //     successcb(data);
-            // }).error(function () {
-            //     $log.warn(data,status,headers(),config)
+        getEvent: function (eventId) {
+            // return $http({
+            //     method: "GET",
+            //     url: "/data/event/1"
             // });
+            return resource.get({id:eventId});
         },
         
         getEventByResource:function(){
@@ -66,6 +62,9 @@ eventsApp.factory('eventData', function ($http,$resource,$log) {
         save:function(event){
             event.id=1001;
             return resource.save(event);
+        },
+        getAllEvents:function(){
+            return resource.query();
         }
     }
 });
