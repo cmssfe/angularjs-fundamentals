@@ -10,24 +10,31 @@ In this course, you will learn how simple it is to use Angular to create maintai
 ---
 ### Angular Routing
 
-#### About Single Page Application
+* About Single Page Application
 
-#### Angular Route and Default Route
+* Angular Route and Default Route
 
-#### Accessing Parameter from the Route
+* Accessing Parameter from the Route
 
-#### Using the $route Service
+* Using the $route Service
 
-#### Enabling HTML5 Routing using Node.js or IIS
+* Enabling HTML5 Routing using Node.js or IIS
 
-#### Resolve Properties 
+* Resolve Properties 
 
-#### $location Service
+* $location Service
 
 ---
 
 ### Build-In Directives and Creating Custom Angular Directives
 
 ### Test Angular
+* Testing Controllers
+* Testing Serices
+* Testing Ajax Services
+* Testing Filters
+* Testing Directives
+* End to End Config
+* End to End Testing
 
 ### A To-Do App Using AngularJS And Bootstrap
