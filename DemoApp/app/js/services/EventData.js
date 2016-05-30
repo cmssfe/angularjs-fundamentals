@@ -60,7 +60,7 @@ eventsApp.factory('eventData', function ($http,$resource,$log) {
             return resource.get({id:1});
         },
         save:function(event){
-            event.id=1001;
+            event.id=999;
             return resource.save(event);
         },
         getAllEvents:function(){
