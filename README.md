@@ -37,4 +37,8 @@ In this course, you will learn how simple it is to use Angular to create maintai
 * End to End Config
 * End to End Testing
 
+https://karma-runner.github.io/0.13/index.html
+
+http://www.protractortest.org/
+
 ### A To-Do App Using AngularJS And Bootstrap

@@ -6,7 +6,7 @@
         <img src="" alt="{{event.name}}" ng-src="{{event.imageUrl}}">
 
         <div class="row">
-            <div class="spann11">
+            <div class="span11">
                 <h2 ng-style="myStyle">{{event.name | uppercase}}</h2>
             </div>
         </div>
@@ -33,7 +33,7 @@
 
         <select ng-model="sortOrder" class="input-small">
                 <option selected value="name">Name</option>
-                <option value="-upVouteCount">upVouteCount</option>
+                <option value="-upVoteCount">Votes</option>
             </select> Show:
         <select ng-model="query.level" class="input-medium">
                 <option selected value="">All</option>
@@ -52,7 +52,7 @@
                             <i class="icon-chevron-up icon-white"></i>
                         </div>
                         <div class="badge badge-inverse">
-                            <div>{{session.upVouteCount}}</div>
+                            <div>{{session.upVoteCount}}</div>
                         </div>
                         <div class="votingButton" ng-click="downVoteSession(session)">
                             <i class="icon-chevron-down"></i>

@@ -19,6 +19,9 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
                 templateUrl: 'templates/About.html',
                 controller: "AboutController"
             })
+            .when('/sampleDirective', {
+                templateUrl: 'templates/sampleDirective.html'
+            })
             .when('/event/:eventId', {
                 templateUrl: 'templates/EventDetails.html',
                 // template:"<h3>Hello world.</h3>",
