@@ -17,10 +17,10 @@ eventsApp.controller('EventDetailController', function ($scope,eventData,$routeP
     
     
     $scope.upVoteSession = function (session) {
-        session.upVouteCount++;
+        session.upVoteCount++;
     }
     $scope.downVoteSession = function (session) {
-        session.upVouteCount--;
+        session.upVoteCount--;
     }
 
 });

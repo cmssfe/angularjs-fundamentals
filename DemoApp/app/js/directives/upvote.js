@@ -1,11 +1,14 @@
 'use strict';
 
-eventsApp.directive('mySample',function ($compile) {
+eventsApp.directive('upvote',function ($compile) {
     return {
-        restrict:'EA',
-        template:"<input type='text' ng-model='sampleData' /><br/>{{sampleData}}<br/>",
+        restrict:'E',
+        templateUrl:"templates/upvote.html",
         scope:{
-            
+            upvote:"&",//function in parent scope
+            downvote:"&",
+            count:"=",
+            label:"@"
         },
         link:function (scope,element,attrs,controller) {
             // var markup="<input type='text' ng-model='sampleData' /><br/>{{sampleData}}<br/>";

@@ -75,3 +75,9 @@ select, textarea {
     left: 209px;
     background-color: #272b30;
 }
+
+.span3 img{
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}

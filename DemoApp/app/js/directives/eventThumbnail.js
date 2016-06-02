@@ -5,6 +5,10 @@ eventsApp.directive('eventThumbnail',function ($compile) {
         restrict:'E',
         replace:true,
         templateUrl:"templates/eventThumbnail.html",
+        //isolating scope
+        scope:{
+            event:"="
+        },
         link:function (scope,element,attrs,controller) {
 
         }
