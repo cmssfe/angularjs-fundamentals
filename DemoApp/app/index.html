@@ -17,7 +17,7 @@
                 <ul class="nav">
                     <li>
                         <!--<a href="#/events">Home</a>-->
-                        
+
                         <a href="events">Home</a>
                     </li>
                     <li>
@@ -28,10 +28,13 @@
                     <li>
                         <a href="about">About</a>
                     </li>
+                    <li>
+                        <a href="login">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        
+
         <div ng-view></div>
     </div>
     <script src="/lib/jquery.min.js"></script>
@@ -46,7 +49,7 @@
     <script src="/js/controllers/EventListController.js"></script>
     <script src="/js/controllers/EventDetailController.js"></script>
     <script src="/js/controllers/MainMenuController.js"></script>
-    
+
     <script src="/js/controllers/AboutController.js"></script>
     <script src="/js/filters.js"></script>
     <script src="/js/directives/sampleDirective.js"></script>
@@ -54,6 +57,18 @@
     <script src="/js/directives/upvote.js"></script>
     <script src="/js/directives/dateKeys.js"></script>
     <script src="/js/directives/collapsible.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBOy8jkqLTID7vc3iJRbtFbd7LfSqVyNLI",
+            authDomain: "project-6711573909007260784.firebaseapp.com",
+            databaseURL: "https://project-6711573909007260784.firebaseio.com",
+            storageBucket: "project-6711573909007260784.appspot.com",
+        };
+        firebase.initializeApp(config);
+
+    </script>
 </body>
 
 </html>

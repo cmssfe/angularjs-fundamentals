@@ -19,6 +19,10 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
                 templateUrl: 'templates/About.html',
                 controller: "AboutController"
             })
+            .when('/login', {
+                templateUrl: 'templates/Login.html',
+                controller: "LoginController"
+            })
             .when('/sampleDirective', {
                 templateUrl: 'templates/sampleDirective.html'
             })
