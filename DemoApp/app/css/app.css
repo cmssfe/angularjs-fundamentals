@@ -1,10 +1,14 @@
 /* app css stylesheet */
+.thumbnails li{
+    list-style-type: none;
+}
 .hoverwell:hover {
-  background-color: #52575c;
+    color: #fff;
+  background-color: #00bcd4;
   cursor: pointer;
 }
 select, textarea {
-  color: #52575c;
+  color: #00bcd4;
 }
 
 .well-title {

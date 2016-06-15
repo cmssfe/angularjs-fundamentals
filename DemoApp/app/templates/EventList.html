@@ -1,10 +1,10 @@
-<div>
+<div class="container">
     <h1>Events List</h1>
-    <hr/>
-    <hr/>
-    <ul class="thumbnails">
-        <li ng-repeat="event in events | orderBy:sortorder" class="span5">
-            <event-thumbnail event="event"></event-thumbnail>
-        </li>
-    </ul>
+    <div class="row">
+        <ul class="thumbnails">
+            <li ng-repeat="event in events | orderBy:sortorder" class="col-sm-6">
+                <event-thumbnail event="event"></event-thumbnail>
+            </li>
+        </ul>
+    </div>
 </div>

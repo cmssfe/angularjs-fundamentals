@@ -1,4 +1,6 @@
 'use strcit'
-eventsApp.controller('EventListController', function ($scope, eventData,$log) {
-    $scope.events=eventData.getAllEvents();
-});
+eventsApp.controller('EventListController',['$scope','events', function($scope, events) {
+    debugger;
+    $scope.events=events;
+    
+}]);
